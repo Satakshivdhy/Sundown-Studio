@@ -1,0 +1,132 @@
+/* *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+} */
+
+.slider {
+    animation-name: slide;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: scroll;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+    /* left: 150%; */
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-53.5734%);
+    }
+
+}
+
+
+
+.hidden-box {
+    transform: translateY(-100%);
+    transition: all ease 0.3s;
+}
+
+.page4-div1:hover .hidden-box,
+.page4-div2:hover .hidden-box,
+.page4-div3:hover .hidden-box,
+.page4-div4:hover .hidden-box,
+.page4-div5:hover .hidden-box,
+.page4-div6:hover .hidden-box,
+.page4-div7:hover .hidden-box {
+    transform: translateY(0%);
+}
+
+.circle{
+    animation-name: gola;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gola {
+    from{
+        transform: translate(0%, 0%);
+    }
+    to{
+        transform: translate(20%, -20%);
+    }
+}
+
+.orange-gola{
+    animation-name: orange-gola;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes orange-gola {
+    from{
+        transform: translate(0%, 0%);
+    }
+    to{
+        transform: translate(10%, -10%);
+    }
+}
+
+
+.page6-mainbox::-webkit-scrollbar{
+    display: none;
+}
+
+.shape1{
+    animation-name: shape1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes shape1 {
+    0% {
+    transform: rotate(-10deg);
+}
+100% {
+    transform: rotate(-20deg);
+}
+   
+}
+
+.shape2{
+    animation-name: shape2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes shape2 {
+    0% {
+    transform: rotate(30deg);
+}
+
+100% {
+    transform: rotate(45deg);
+}
+    
+}
