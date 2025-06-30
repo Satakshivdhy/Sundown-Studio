@@ -130,3 +130,29 @@ body,html{
 }
     
 }
+
+.page1-nav-icon1::after{
+    content: " ";
+    height: 100px;
+    width:100px ;
+    transform: translateY(100%);
+    transition: all ease 0.7s;
+    position: absolute;
+    border-radius: 100%;
+    background-color: black;
+    /* overflow: hidden; */
+    z-index: 0;
+
+
+
+}
+
+.page1-nav-icon1:hover::after{
+
+    transform: translateY(0%);
+    
+
+}
+.page1-nav-icon1:hover{
+    color: white;
+}
